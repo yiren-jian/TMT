@@ -18,7 +18,12 @@ We use the pre-processed NYUv2 and CityScapes from [mtan](https://github.com/lor
 ## Training
 Training with Task Meta-Transfer (TMT):
 ```
-python nyu_TMT.py --rank 5 --model_size M --data_size S --dataroot /home/yiren/datasets/nyuv2 --target_task depth --auxi_task normal
+python nyu_TMT.py \
+    --rank 5 \
+    --model_size M \
+    --data_size S \
+    --dataroot /home/yiren/datasets/nyuv2 \
+    --target_task depth --auxi_task normal
 ```
 Setting `--target_task` and `--auxi_task` from `semantic/depth/normal` for the primary target task and auxiliary task.
 

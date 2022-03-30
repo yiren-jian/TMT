@@ -16,7 +16,7 @@ This repo covers the implementation of **[Task Meta-Transfer from Limited Parall
 This repo was tested with Ubuntu 18.04.5 LTS, Python 3.6, PyTorch 1.4.0, and CUDA 10.1. You will need at least 11GB VRAM (e.g. Nvidia RTX-2080Ti) for running full experiments in this repo.
 
 ## Data Preparation
-We use the pre-processed NYUv2 and CityScapes from [mtan](https://github.com/lorenmt/mtan).
+We use the pre-processed NYUv2 and CityScapes from [mtan](https://github.com/lorenmt/mtan). E.g., we put the unzip files in `/home/yiren/datasets/nyuv2`.
 
 ## Training
 <img src="figures/method.png" width="400">

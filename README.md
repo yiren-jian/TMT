@@ -1,5 +1,8 @@
 # Task Meta Transfer (TMT)
 This repo covers the implementation of **[Task Meta-Transfer from Limited Parallel Labels](https://meta-learn.github.io/2020/papers/15_paper.pdf)** presented at 4th Meta-Learning workshop, NeurIPS 2020. [Video](https://slideslive.com/38941946/task-metatransfer-from-limited-parallel-labels) and [Poster](https://meta-learn.github.io/2020/papers/15_poster.png) are available.
+
+<img src="figures/overview.png" width="400">
+
 ```bibtex
 @article{Jian2020TMT,
     author = {Yiren Jian, Karim Ahmed and Lorenzo Torresani},
@@ -8,8 +11,6 @@ This repo covers the implementation of **[Task Meta-Transfer from Limited Parall
     year = {2020}
 }
 ```
-
-<img src="figures/overview.png" width="400">
 
 ## Requirements
 This repo was tested with Ubuntu 18.04.5 LTS, Python 3.6, PyTorch 1.4.0, and CUDA 10.1. You will need at least 11GB VRAM (e.g. Nvidia RTX-2080Ti) for running full experiments in this repo.

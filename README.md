@@ -9,6 +9,8 @@ This repo covers the implementation of **[Task Meta-Transfer from Limited Parall
 }
 ```
 
+<img src="figures/overview.pdf" width="400">
+
 ## Requirements
 This repo was tested with Ubuntu 18.04.5 LTS, Python 3.6, PyTorch 1.4.0, and CUDA 10.1. You will need at least 11GB VRAM (e.g. Nvidia RTX-2080Ti) for running full experiments in this repo.
 
@@ -16,15 +18,19 @@ This repo was tested with Ubuntu 18.04.5 LTS, Python 3.6, PyTorch 1.4.0, and CUD
 We use the pre-processed NYUv2 and CityScapes from [mtan](https://github.com/lorenmt/mtan).
 
 ## Training
+<img src="figures/method.pdf" width="400">
+
 Training with Task Meta-Transfer (TMT):
 ```
 python nyu_TMT.py \
+    --rank_projection \
+    --update_freq 5 \
     --rank 5 \
     --model_size M \
     --data_size S \
     --dataroot /home/yiren/datasets/nyuv2 \
-    --target_task depth \
-    --auxi_task normal
+    --target_task semantic \
+    --auxi_task depth
 ```
 Setting `--target_task` and `--auxi_task` from `semantic/depth/normal` for the primary target task and auxiliary task.
 

@@ -35,6 +35,29 @@ python nyu_TMT.py \
 ```
 Setting `--target_task` and `--auxi_task` from `semantic/depth/normal` for the primary target task and auxiliary task.
 
+Running all experiments by the following commands
+```
+#### VGG
+python nyu_TMT.py --arch deconv_3d --rank_projection --rank 5   --update_freq 5 --target_task semantic --auxi_task depth
+python nyu_TMT.py --arch deconv_3d --rank_projection --rank 100 --update_freq 8 --target_task semantic --auxi_task normal
+
+python nyu_TMT.py --arch deconv_3d --rank_projection --rank 5   --update_freq 4 --target_task depth --auxi_task semantic
+python nyu_TMT.py --arch deconv_3d --rank_projection --rank 40  --update_freq 5 --target_task depth --auxi_task normal
+
+python nyu_TMT.py --arch deconv_3d --rank_projection --rank 40  --update_freq 2 --target_task normal --auxi_task semantic
+python nyu_TMT.py --arch deconv_3d --rank_projection --rank 40  --update_freq 9 --target_task normal --auxi_task depth
+
+#### resnet
+python nyu_TMT.py --arch resnet_3d --rank_projection --rank 60   --update_freq 10 --target_task semantic --auxi_task depth
+python nyu_TMT.py --arch resnet_3d --rank_projection --rank 60   --update_freq 9  --target_task semantic --auxi_task normal
+
+python nyu_TMT.py --arch resnet_3d --rank_projection --rank 80  --update_freq 3  --target_task depth --auxi_task semantic
+python nyu_TMT.py --arch resnet_3d --rank_projection --rank 60  --update_freq 9  --target_task depth --auxi_task normal
+
+python nyu_TMT.py --arch resnet_3d --rank_projection --rank 40  --update_freq 5  --target_task normal --auxi_task semantic
+python nyu_TMT.py --arch resnet_3d --rank_projection --rank 40  --update_freq 9  --target_task normal --auxi_task depth
+```
+
 Baseline single task training (without auxiliary task learning):
 ```
 python nyu_baseline.py

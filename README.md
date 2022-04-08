@@ -5,10 +5,10 @@ This repo covers the implementation of **[Task Meta-Transfer from Limited Parall
 
 ```bibtex
 @article{Jian2020TMT,
-    author = {Jian, Yiren and Ahmed, Karim and Torresani, Lorenzo},
-    title = {Task Meta-Transfer from Limited Parallel Labels},
-    journal = {4th Meta-Learning workshop, NeurIPS 2020},
-    year = {2020}
+  author = {Jian, Yiren and Ahmed, Karim and Torresani, Lorenzo},
+  title = {Task Meta-Transfer from Limited Parallel Labels},
+  journal = {4th Meta-Learning workshop, NeurIPS 2020},
+  year = {2020}
 }
 ```
 
